@@ -5,8 +5,8 @@ sudo: required
 cache:
   npm: true
   directories:
-    - /home/travis/.cache/Cypress
-    - ~/.npm
+  - "/home/travis/.cache/Cypress"
+  - "~/.npm"
 install:
 - npm install
 - npm install -g ngrok
@@ -35,8 +35,10 @@ addons:
   chrome: stable
   apt:
     packages:
-      # Ubuntu 16+ does not install this dependency by default, so we need to install it ourselves
-      - libgconf-2-4
+    - libgconf-2-4
 env:
   global:
   - SHOPIFY_URL: swanky-saddleback.myshopify.com
+  - secure: LG0dxeOdcv4ANd99HVCYiuVhTC5Aoz92KFlJbe9nQ+aRSp3VFSRA3m6ILfjrZxXU6bAonlLTe0Qs6LaO5ny4oAJQa1a3UDozEvF/rvqHVsfrZpGaUjpoVIK2OQ/LNexXmHsS9Eqes6hOK8aRJU9RHhVirFAGZTjsFTD8Gcl2xz//UByLjiNX0juEAjJTE/Rp1LngZ/8xD/LEZ5i8ZuTozUOYbSPvzsbWH/kwR8cbxDUz693PhrRr5LDbLdaEUF5v0S/pLlpYkIaszgakHJY3BJOh/kEU3gd/0dvIjWpxibXmUC98i0ZNmqO+HbCnc8Xqa9/Ydu3cV4s9aJYEYhRG3xReEuxhJoYAOvIsBdH1gntDXpC/JWUj4+0kT4Mfw33kWa70pCZ3oYtdeWnhUvYcQwSWz6vWs14DXs4D4tvc6tpuXiXUoLDAGJN6fBo4abGXmSgkl8EvOkVZ0Xd8aveP2Erhz7IB9l+OD5bHyaPj4STpV7AMkmIu6CUDQa6Eo4tyhELniZ5bztFuq3/gvuT8sOAl5RPc71dLKj2FXrC5I0YnvgbUBk3GJCDEa2F+2NcBVe0hT9xJFuHTNMIw3Ceeo3kBt7MIM0JFjTsoWMFe8b5vitvyiDm8sULPgVb2subdR5ILgnVFZzXMJQlBTPkAtTyXK7Yehok59aCFxqB7Fto=
+  - secure: zbWh0XNdIGia6PkLzXy8PegNAVhlVzmDyWeT0t8326ou775YTr7p9qeQUKmLHFrpSfYeCLzpSe4xO/nAG3CavVXmbsWQqEPsH19KS85e/XhjRNEFvST3zpuyRLRHIoEgnEqnjYMH4++Xx+OjuEXoL4UfojpeWrpi7+x3/uZC3tM+TEW4NT71hI/qTFNg+MPq++OUFh7/OGSjKSUoL4emlTKuuP3ESPmN9x8xQXxdX3zEhdwJMO8krVAkpNGdtcFrbgXS8Lx1B9qTVgqIIYKZMlW7fZFJAyp/pryzkRT2X+iD6yfbaN2P6NKgCeG4nj+k+nygzyRdVQn9tMrdOhuMD1nuCninAsmHIDI0B3TjeMXpL89np+fTCK6lFaeUPwQtwcsUbjeb+30xOL8RLm8pDYMS5KyPXgKuL7GOLBmm3qkRIOCrJCc8dLY2NtwjxxbpOiQT5hdWU3wYfNoFkI210uwOy9+TzXXCGIPiheAdcNF/4NMusw5PnxKyM1F5CgJOBgYDirhgAHuzrRV1qPRX+qYss+bx3crOvCDh2aOlCxQh/DZGf9eqREmT5U7ckUp6biNUdy8gjukHsNwq8H+fAvvGzJSyYQwIJ4OsnozYwIbzXW4rVH5EwrH6+2UYXNfobpybT9eEw+kZwIo6qKPZLHxHds4vpKwe6WDPzIsTgBo=
+  - secure: YAqjce9KJy1qZD7fpSquUP3Zu/ggpgDGx58R4EoY1ioGIOBKItgfkzcO3qsdUGhTlDYsHktxCQrxFeWhCIJFQICO30oCdZdd65VFHhHI/1b3iU1s78Ko7AqRTuKs6tPiX6C7BQHfaj0vLMKo7+y3hsqQAQ0Y8lhH/R3xBYRd0WRe/2vbQfdNdaFn/Ggiu+WP/Z8ouVC0tap31ClJCPPHgfCfCle215+zTqThe0v4u7oDcenyuUOuIojjDfE1yY97BX5gUH3TbanpFxHrCnvNGpvy6dAYd1r+uJwq43VS4F77C6KFSWcSGkS383qZjT5+ONet/vIDz+utKAZriHqzVijLc/AsF2cIXHcV+z0j6aC4vKzNJu31xcP/Dkkt2CdYYbhpXSJVvrDTAYXtJwh0t4iOpBRTl3NgUIOZcrQZDgomLbu/R4UnZ4KdZ2lqWUU4qX1ipcg2lpTlni7FeFA934ACSXwrEy1wG+tU29qs2d/QXwPTvC+w7w3rf/Lb3aWaky1LsWHm+sQFGKul7N/mkK4ps2EvjYqaSLUKx12zHhIAyTclQlZSK/51AXj7rOdo/qV2yVOIOErRGIB8H4NW0R8wEoaddNtnS7fFWbbLiGZrOou7ty9YtmnREv24t/EPmFh4lS6rItU1izDT0TpeF1y4iBdIzGYv9WsKSwyX0Jk=
