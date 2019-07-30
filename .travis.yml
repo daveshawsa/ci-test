@@ -7,7 +7,10 @@ cache:
   directories:
   - "/home/travis/.cache/Cypress"
   - "~/.npm"
+  - ~/.cache
 install:
+- npm ci
+- npm install npm@latest -g
 - npm install
 - npm install -g ngrok
 before_script:
